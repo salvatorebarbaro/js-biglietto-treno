@@ -8,15 +8,17 @@ let km = Number( prompt ("inserire i chilometri da percorrere") );
 let Età = Number( prompt ("inserire la propria età") ); 
 
 // isnan variabile o coamndo usato per definire se sia un numero o no
-if(isNaN(Età))
+if( ((isNaN(Età)) && (Età <= 0)) || (Età > 99) )
 {
-    alert("hai inserito il numsero");
+    alert("non è un numero ma ti svegli ricarica la pagina");
 }
 
 else
 {
-    alert("non è un numero ma ti svegli");
+    
+    alert("hai inserito il numero");
 }
+
 
 // variabile usata per riproporre a schermo i km inseriti
 document.getElementById("Età").innerHTML = `Questa è l'Età inserita ${Età}anni`;

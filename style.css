@@ -11,5 +11,18 @@ h1{
     margin: 12px 0px;
 }
 
-div{margin: 12px 0px;}
+div{
+    margin: 12px 0px;
+    font-size: 18px;
+}
+#km
+{
+    color: lightskyblue;
+    background-color: blueviolet;
+}
+#Costo_biglietto
+{
+    color: yellowgreen;
+    transform: rotate(90°);
+}
 
