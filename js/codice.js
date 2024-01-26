@@ -7,11 +7,12 @@ let km = Number( prompt ("inserire i chilometri da percorrere") );
 // abbiamo inserito number per definire sin da subito il valore inserito come numero e non come stringa
 let Età = Number( prompt ("inserire la propria età") ); 
 
-// controllo con relativo messaggio di allert se si inserisce un numero 
+// isnan variabile o coamndo usato per definire se sia un numero o no
 if(isNaN(Età))
 {
     alert("hai inserito il numsero");
 }
+
 else
 {
     alert("non è un numero ma ti svegli");
