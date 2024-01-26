@@ -19,12 +19,27 @@ console.log(km);
 // comando usato per visualizzare risultato
 console.log(Età);
 
-const sconto_over = ((100 / 40) * 100);
-console.log(sconto_over);
+// dichiarazione degli sconti 
+const sconto_over = Number (40);
+const sconto_under = Number (20);
+
 
 let Costo_biglietto ;
+let costo_tratta = (km * 0.21);
 
 if(Età >= 65 ) 
 {
-    Costo_biglietto = ((0.21 * km)- sconto_over)
+    Costo_biglietto = Number ((costo_tratta - ((costo_tratta * sconto_over)/ 100 ) ));
+    document.getElementById("Costo_biglietto").innerHTML = `Questo è quanto spendi ${Costo_biglietto}`;
+ 
+}
+else if(Età <= 17) 
+{
+    Costo_biglietto = Number ((costo_tratta - ((costo_tratta * sconto_under)/ 100 ) ));
+    document.getElementById("Costo_biglietto").innerHTML = `Questo è quanto spendi ${Costo_biglietto}`;
+}
+else
+{
+    Costo_biglietto = Number (costo_tratta) ;
+    document.getElementById("Costo_biglietto").innerHTML = `Questo è quanto spendi ${Costo_biglietto}`;
 }
