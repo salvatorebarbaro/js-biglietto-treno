@@ -6,7 +6,7 @@ let Eta = ( prompt ("inserire la propria età") );
 let errore_km;
 let errore_Eta;
 
-// isnan variabile o coamndo usato per definire se sia un numero o no , || porta logica or che se una delle 2 condizioni inserite si blocca è restituisce errore
+// isnan variabile o coamndo usato per defin ire se sia un numero o no , || porta logica or che se una delle 2 condizioni inserite si blocca è restituisce errore
 if (isNaN(km) || isNaN(Eta))
 {
     alert("non è un numero");
