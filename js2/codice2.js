@@ -22,10 +22,10 @@ else if( km <= 0 || Eta <= 0 || Eta > 99)
     alert("sei sicuro di aver messo il numero giusta?");
     
     errore_km = km;
-    document.getElementById("errore_km").innerHTML = `hai sbagliato inserendo euesto valore ${errore_km}`;
+    document.getElementById("errore_km").innerHTML = `hai sbagliato inserendo questo valore ${errore_km}`;
     
     errore_Eta = Eta;
-    document.getElementById("errore_Eta").innerHTML = `hai sbagliato inserendo euesto valore ${errore_Eta}`;
+    document.getElementById("errore_Eta").innerHTML = `hai sbagliato inserendo questo valore ${errore_Eta}`;
 }
 else
 {
