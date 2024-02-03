@@ -45,3 +45,7 @@ if (scelta_utente === scelta_computer) {
     document.getElementById("risultato").innerHTML = "Hai perso!";
 }
 }
+
+
+
+
